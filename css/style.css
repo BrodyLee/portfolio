@@ -1,0 +1,1102 @@
+@font-face {
+    font-family: SourceSansPro-Regular;
+    src: url(../font/SourceSansPro-Regular.ttf)
+}
+
+@font-face {
+    font-family: SourceSansPro-Italic;
+    src: url(../font/SourceSansPro-Italic.ttf)
+}
+
+@font-face {
+    font-family:SourceSansPro-Light;
+    src: url(../font/SourceSansPro-Light.ttf)
+}
+@font-face {
+    font-family:SourceSansPro-LightItalic;
+    src: url(../font/SourceSansPro-LightItalic.ttf)
+}
+@font-face {
+    font-family:SourceSansPro-Semibold; 
+    src: url(../font/SourceSansPro-Semibold.ttf)
+}
+
+/**/
+
+body {
+    width:  100%;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+#wrapper {
+ overflow: hidden;   
+}
+ 
+.left {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.head {
+    width: 100%;
+    background: rgba(247,214,0,0.9);
+    height: 75px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: 100;
+}
+
+.headnav {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.logo {
+    margin: 18px 0;
+}
+
+.nav {
+    float: right;
+    margin: 12px 0;
+}
+
+.nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav ul li a {
+    transition: all 350ms;
+    font-family: SourceSansPro-Regular, sans-serif;
+    color: #000000;
+    text-decoration: none;
+    padding: 8px 17px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-right: 1px solid rgba(247,214,0,0.1);
+    border-left: 1px solid rgba(247,214,0,0.1);
+}
+
+.nav ul li a.lastli{
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.nav ul li a:hover {
+/*    border: 1px solid black;*/
+    border-radius: 2px;
+    color: white;
+}
+
+.nav ul li a:active {
+/*    border: 1px solid black;*/
+    border-radius: 2px;
+    color: white;
+}
+
+
+
+
+.bg {
+/*background: url(/Src/95cdfeef.jpg);*/
+    width: 100%;
+    height: 560px;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5); 
+    background-position: 40% 10%;
+    position: relative;
+}
+
+.bg-size {    
+    height: 560px;
+}
+
+.widTitle {
+    width: 87.4%;
+    position: absolute;
+    top: 28%;
+    left: 6%;
+}
+
+.title {
+    position: absolute;
+    top: 28%;
+    right: 0%;
+    border: 2px solid #f6bf00;
+    padding: 20px;
+    height: 192px;
+}
+
+.title p:first-child {
+    font-size: 48px;
+    text-align: right;
+    margin: 0;
+    padding: 10px 0;
+     font-family: SourceSansPro-Light, sans-serif;
+}
+
+.title p:nth-child(2) {
+    font-size: 33px;
+    text-align: right;
+    margin: 0;
+    padding: 45px 0;
+    font-family:SourceSansPro-LightItalic, sans-serif;
+}
+
+main {
+    width: 100%;
+    margin: 75px auto;   
+     
+}
+
+.glav {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+main .someWork {
+    width: 33.7%;
+    background: #ffffff;
+    height: 375px;
+    position: relative;
+}
+
+main .gold {
+    border: 2px solid #f6bf00;
+    position: absolute;
+    top: 8%;
+    left: 7%;
+    width: 85%;
+    height: 307px;
+}
+
+.gold span {
+    font-size: 3.6em;
+    display: block;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+
+.gold span:first-child {
+    font-family: SourceSansPro-Light, sans-serif;
+    padding: 42px 35px 0;
+}
+
+.gold span:nth-child(2) {
+    font-family: SourceSansPro-Semibold, sans-serif;
+        padding: 0 35px;
+}
+
+.gold p {
+        padding: 15px 35px;
+    font-size: 1.47em;
+    font-family: SourceSansPro-LightItalic, sans-serif;
+}
+
+.work1 {
+    width: 66.3%;
+    position: relative;
+    float: left;
+    height: 375px;
+}
+
+.spen {
+    font-family:SourceSansPro-Light,sans-serif;
+    color: #fff;
+    display: block;
+    position: absolute;
+    bottom: 3em;
+    right: 26px;
+    font-size: 18px;
+    width: 47px;
+}
+
+.spenone {
+    font-family: SourceSansPro-Regular,sans-serif;
+    color: #fff;
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    right: 10px;
+    width: 144px;
+    font-size: 26px;
+}
+
+.hovLook {
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 650ms;
+    opacity: 0;
+    -webkit-transition: all 650ms;
+    height: 375px;
+}
+
+.hovBg {
+    background: #fff;
+    position: relative;
+    top: 8%;
+    left: 3%;
+    width: 94%;
+    transition: all 650ms;
+    -webkit-transition: all 650ms;
+    height: 318px;
+    opacity: 0;
+}
+
+
+.hovGold {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid #f6bf00;
+    width: 91%;
+    transition: all 650ms;
+    opacity: 0;
+    -webkit-transition: all 650ms;
+    height: 148px;
+    padding-top: 107px;
+    position: absolute;
+    top:9%;
+    left: 4%;
+}
+
+.hovGold span:first-child {
+    font-family: SourceSansPro-Light, sans-serif;
+}
+
+.hovGold span:nth-child(2) {
+    font-family: SourceSansPro-Semibold, sans-serif;
+}
+
+.work1:hover .hovLook {
+   opacity: 1;
+}
+.work1:hover .hovGold{
+   opacity: 1;
+}
+.work1:hover .hovBg{
+   opacity: 1;
+}
+.work1:hover .spen {
+    opacity: 0;
+}
+.work1:hover .spenone {
+    opacity: 0;
+}
+
+.work3:hover .hovLook {
+   opacity: 1;
+}
+.work3:hover .hovGold{
+   opacity: 1;
+}
+.work3:hover .hovBg{
+   opacity: 1;
+}
+.work3:hover .spen2 {
+    opacity: 0;
+}
+
+.work3:hover .spen3 {
+    opacity: 0;
+}
+.spen2 {
+    font-family:SourceSansPro-Light,sans-serif;
+    right: 26px;
+    color: #fff;
+    display: block;
+    position: absolute;
+    bottom: 3em;
+    font-size: 18px;
+    width: 151px;
+}
+.spen3 {
+    font-family: SourceSansPro-Regular,sans-serif;
+    color: #fff;
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    right: 10px;
+    width: 197px;
+    font-size: 26px;
+}
+
+.work3 {
+    width: 66.2%;
+    position: relative;
+    float: left;
+    height: 375px;
+}
+
+.workZay {
+    width: 33.7%;
+    height: 375px;
+    background-color: #2b2b2b;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.imac {
+      padding: 28px 20px;
+}
+
+.hovBgZay {
+    width: 90%;
+    background: #fff;
+    position: relative;
+    top: 7%;
+    left: 4.5%;
+    transition: all 650ms;
+    -webkit-transition: all 650ms;
+    height: 318px;
+    opacity: 0;
+}
+
+.hovGoldZay {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid #f6bf00;
+    transition: all 650ms;
+    opacity: 0;
+    -webkit-transition: all 650ms;
+    height: 153px;
+    padding-top: 107px;
+    width: 82%;
+    position: absolute;
+    top: 8%;
+    left: 8.4%;
+}
+
+.hovGoldZay span:first-child {
+    font-family: SourceSansPro-Light, sans-serif;
+}
+
+
+
+.hovGoldZay span:nth-child(2) {
+    font-family: SourceSansPro-Semibold, sans-serif;
+}
+
+.workZay:hover .hovLook {
+   opacity: 1;
+}
+.workZay:hover .hovGoldZay{
+   opacity: 1;
+}
+.workZay:hover .hovBgZay{
+   opacity: 1;
+}
+.workZay:hover .spenZay {
+    opacity: 0;
+}
+.workZay:hover .spenoneZay {
+    opacity: 0;
+}
+
+.spenZay {
+    font-family: SourceSansPro-Light,sans-serif;
+    color: #fff;
+    display: block;
+    position: absolute;
+    bottom: 3em;
+    right: 26px;
+    font-size: 18px;
+    width: 94px;
+}
+
+.spenoneZay {
+    font-family: SourceSansPro-Regular,sans-serif;
+    color: #fff;
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+    font-size: 26px;
+     width: 152px;
+}
+
+.about {
+    width: 100%;
+        position: relative;
+    margin-bottom: 80px;
+}
+
+/*
+.abImg {
+    width: 66.3%;
+}
+*/
+
+.discr {
+    background: #fff;
+    height: 635px;
+    width: 386px;
+    position: absolute;
+    right: 0;
+}
+
+.goldDiscr {
+    margin: 26px 31px;
+    border: 2px solid #f6bf00;
+    height: 580px;    
+}
+
+.inside {
+    margin: 37px 24px;
+    text-align: right;
+}
+
+.inside span {
+    display: block;
+}
+
+hr {
+    width: 40%;
+    float: right;
+    margin: 30px 0;
+}
+
+.list {
+    clear: both;
+}
+
+.markDev {
+    margin-top: 53px;
+    font-size: 22px;
+}
+
+.markDev span {
+  font-family:  SourceSansPro-LightItalic,sans-serif;
+}
+
+.me span {
+    font-size: 56px;
+    line-height: 50px;
+}
+
+.me span:first-child{
+    font-family:SourceSansPro-Light, sans-serif;
+    text-transform: uppercase;
+}
+.me span:last-child{
+    font-family:SourceSansPro-Semibold, sans-serif;
+    text-transform: uppercase;
+}
+
+.list {
+    width: 100%;
+    height: 220px;
+}
+
+
+.list ul {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 50px;
+}
+
+
+.list ul li div:nth-child(2) {
+    height: 0px;
+    width: 53%;
+    border-bottom: 1px dashed black;
+    float: left;
+    margin: 22px 11px;
+}
+
+.list ul li span {
+    float: left;
+    font-size: 22px;
+    width: 26%;
+    margin: -4px;
+    text-align: left;
+        font-family: SourceSansPro-Italic, sans-serif;
+}
+
+.hire {
+    height: 468px;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 32px;
+}
+
+.hire .beaut  {
+    border: 2px solid #f6bf00;
+    height: 433px;
+    width: 30%;
+    margin: 0px 2.5%;
+}
+
+.hire .beaut span {
+    display: block;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-family:SourceSansPro-Light, sans-serif;
+}
+
+.hire .beaut span:nth-child(2) {
+    display: block;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-family:SourceSansPro-Semibold, sans-serif;
+}
+
+.hire .beaut div:first-child {
+    font-size: 56px;
+    margin: 40px;
+}
+
+.hire .beaut div:last-child {
+    margin: 40px;
+    font-size: 24px;
+    font-family: SourceSansPro-LightItalic, sans-serif;
+}
+
+
+.hire .rightHire {
+    float: left;
+    width: 63%;
+    max-width: 725px;
+}
+.hire .rightHire form {
+    width: 100%;
+    max-width: 725px;
+}
+.hire .rightHire input {
+      border-radius: 0;
+    padding: 12px 2.2%;
+    width: 42%;
+    border: 2px solid #f6bf00;
+    font-family: SourceSansPro-Italic, sans-serif;
+    font-size: 16px;
+}
+
+.hire .rightHire input:focus {
+        outline: #f6bf00  auto 5px;
+}
+
+.hire .rightHire input[type="email"] {
+     margin-left: 5.5%;
+}
+
+.hire  textarea {
+    width: 95%;
+    margin: 42.2px 0;
+    border: 2px solid #f6bf00;
+    height: 201px;
+    padding:  12px 2.2%;
+    font-family: SourceSansPro-Italic, sans-serif;
+    font-size: 16px;
+}
+
+.hire  textarea:focus {
+     outline: #f6bf00  auto 5px;
+}
+
+.hire input[type="submit"] {
+    -webkit-appearance: none;
+    transition: all 350ms;
+    width: 200px;
+    color: #000;
+    font-size: 24px;
+    border: 2px solid #f6bf00;
+    text-transform: uppercase;
+    background: #fff;
+    padding: 18px 0;
+    font-family: SourceSansPro-Light, sans-serif;
+}
+
+.hire input[type="submit"]:hover {
+    background: #f6bf00;
+}
+
+.hire input[type="submit"]:active {
+    background: #f6bf00;
+}
+
+footer {
+    padding: 60px 0px;
+    width: 100%;
+    background: #fff;
+    height: 25px;
+    font-family: SourceSansPro-Regular, sans-serif;
+}
+
+.footglav {
+    padding: 0 2%;
+    max-width: 1170px;
+    margin: 0 auto;
+    color: #999999;
+}
+
+.footcopy {
+        width: 350px;
+}
+
+.social {
+    float: right;
+    width: 250px;
+    text-align: -webkit-right;
+}
+
+.social ul {
+    margin: 0;
+    padding: 0;
+}
+
+.social ul li {
+    list-style: none;
+    display: inline-flex;
+    margin-left: 15px;
+}
+
+.social ul li a {
+    color: #999;
+    text-decoration: none;
+}
+
+.social ul li a:hover {
+    color: #c2bfbf;
+    text-decoration: none;
+}
+
+.anchor {
+    margin-top: -100px;
+    display: inline-block;
+    position: relative;
+    height: 70px;
+    width: 1px;
+}
+
+.aboutanch {
+    margin-top: -75px;
+    display: inline-block;
+    position: relative;
+    height: 70px;
+    width: 100px;
+}
+
+.hireanch {
+    margin-top: -75px;
+    display: inline-block;
+    position: relative;
+    height: 70px;
+    width: 1px;
+}
+
+
+.navbtn {
+   
+    display: none;
+    float: right;
+    margin: 26px 0;
+    color: #000;
+    font-size: 20px;
+    cursor:pointer;
+}
+
+.navbtn div{
+    
+    display: block;
+    width: 27px;
+    height: 3px;
+    background: #000;
+    margin-bottom: 5px;
+    transition: all 350ms;
+}
+
+.navbtn:hover div {
+    background: #fff;
+}
+
+.navbtn:active div {
+    background: #fff;
+}
+
+.navclose {
+    position: relative;
+    display: none;
+    float: right;
+    margin: 20px 2%;
+    width: 28px;
+    height: 28px;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navclose div{
+    width: 3px;
+    height: 30px;
+    background: #000;
+    position: absolute;
+    transition: all 350ms;
+}
+
+.navclose:hover div {
+    background: #fff;
+}
+
+.navclose:active div {
+    background: #fff;
+}
+
+
+
+.navclose div:first-child {
+    transform: rotate(45deg);
+    top: 0;
+    right: 14px;
+}
+
+.navclose div:last-child {
+    transform: rotate(-45deg);
+    right: 13px;
+}
+
+
+/*MEDIA*/
+
+@media screen and (max-device-width:1024px) {
+    .headnav {
+        width: 95%;
+    }
+    
+    .list ul li div:nth-child(2) {
+        width: 50%;
+    }
+
+    .hire .rightHire {
+        max-width: 640px;}
+    
+    .hire .rightHire input[type="email"] {
+            margin-left: 4.55%;}
+
+    .footglav {
+    max-width: 1170px;
+    margin: 0 auto;
+    color: #999999;
+    padding: 0 2%;
+    display: block;
+    overflow: hidden;
+    }
+    
+    .footcopy {
+        width: 48%;
+    text-align: left;
+}
+    .social {
+      width: 52%;
+    text-align: right;
+    float: left;
+    }
+}
+
+
+@media screen and (max-device-width:802px) {
+    main .someWork {
+        width: 50%;
+    }
+
+    .widTitle {
+        left: 7%;
+    }
+    
+    .work1 {
+        width: 50%;
+    }
+    .work3 {
+        width: 50%;
+    }
+    .workZay {
+        width: 50%;
+    }
+    .hovGold {
+    top: 9%;
+    left: 7%;
+    position: absolute;
+    margin: 0;
+    width: 85%;
+    }
+
+    .hovBg {
+    position: relative;
+    top: 8%;
+    left: 3%;
+    }
+     
+    .hovGoldZay {
+    top: 9%;
+    left: 7%;
+    margin: 0;
+    width: 85%;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid #f6bf00;
+    transition: all 650ms;
+    opacity: 0;
+    -webkit-transition: all 650ms;
+    height: 148px;
+    padding-top: 107px;
+    position: absolute;
+    }
+    
+    .hovBgZay {
+    background: #fff;
+    position: relative;
+    top: 8%;
+    left: 3%;
+    width: 94%;
+    transition: all 650ms;
+    -webkit-transition: all 650ms;
+    height: 318px;
+    opacity: 0;
+    }
+    
+    .headnav {
+        width: 100%;
+    }
+    .nav {
+        margin: 0;
+        display: none;
+        width: 100%;
+        height: 1024px;
+        overflow: hidden;
+        background:rgba(247,214,0,0.9);
+        position: absolute;
+        top: 0;
+        left: 0; 
+transition: all 350ms;
+    }
+    
+    .nav ul {
+        width: 100%;
+        position: absolute;
+        top:50%;
+        margin: -400px auto;
+        padding: 0;
+    }
+    
+    .nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+    .nav ul li a {
+        font-size: 56px;
+        line-height: 110px;
+        border: 0;
+    }
+    
+    .navbtn {
+        display: block;
+    }
+    .navclose {
+        display: block;
+    }
+    
+    .imac {
+    padding: 28px 65px;
+}
+    .hire .rightHire input {
+    width: 93%;
+    margin: 0px 0 30px 0;
+}
+    .hire .rightHire input[type="email"] {
+        margin-left: 0;}
+    
+    .hire input[type="submit"] {
+       width: 98.6%;
+    }
+    
+    .hire .rightHire {
+    width: 53%;
+}
+    .hire .beaut {
+        width: 40%;
+         height: 484px;
+    }
+    .hire {
+         height: 520px;
+    }
+    .hire textarea {
+    width: 93%;
+        margin: 0 0 27.5px 0;
+    }
+
+    .discr {
+    width: 377px;}
+
+}
+
+@media screen and (max-device-width:1157px) and (min-device-width:1024px) {
+    main .gold {
+        padding: 44px 36px;
+    }
+    
+    .hire .rightHire input[type="email"] {
+        margin-left: 5%;}
+    .hire .rightHire {
+        width: 59%;
+        margin: 0px 2%;}
+    
+}
+
+
+@media screen and (max-device-width:1225px) {
+.headnav {
+        width: 95%;
+    }
+}
+
+
+@media screen and (max-device-width:581px){
+    .widTitle {
+        top:40%;
+    }
+    
+    .contacts {
+    min-height: 110%;
+    height: 100%;
+    }
+    
+    .title p:first-child {
+        text-align: center;
+    }
+    
+    .title p:nth-child(2){
+        text-align: center;
+        padding: 20px 0;
+    }
+    main .someWork {
+        width: 100%;
+    }
+    .work1 {
+        width: 100%;
+    }
+
+    .work3 {
+        width: 100%;
+    }  
+    .workZay {
+        width: 100%;}
+    
+    .about {
+            height: 645px;
+    }
+    
+    .abImg {
+        display: none;
+    }
+    .discr {
+    width: 100%;
+        float: left;
+    }
+    .list ul li div:nth-child(2) {
+       width: 59%;}
+    .list {
+    width: 100%;
+        height: 220px;}
+    .list ul {
+    float: left;
+        width: 100%;
+    }
+    .list ul li span {
+        width: 24%;
+    }
+    
+    .hire {
+    min-height: 965px;
+    }
+    .hire .beaut {
+    margin: 0px 8.5% 65px;
+    width: 81%;
+    height: 370px;
+    }
+    
+    .hire .rightHire {
+    width: 83%;
+    margin: 0 auto;
+    float: none;
+    }
+        
+    .goldDiscr {
+   margin: 25px 8%;
+    }
+}
+
+@media screen and (max-device-width:545px){
+    .title {
+        height: 160px;
+    }
+    
+    .title p:first-child {
+        font-size: 35px;
+    }
+    
+    .title p:last-child {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-device-width:501px) {
+    footer {
+    padding: 30px 0px 50px;
+    }
+    
+    .footcopy {
+      width: 100%;
+    margin: 0px 0 22px;
+    text-align: center;
+    }
+    
+    .social {
+      width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-device-width:416px) {
+    .title p:last-child {
+    font-size: 20px;
+}
+       .title p:first-child {
+        font-size: 35px;
+        padding: 0;
+    }
+    
+    .list {
+        width: 89%;}
+}
+
+@media screen and (max-device-width:381px) {
+
+    footer {
+        padding: 30px 0px 80px;
+    }}
+
+@media screen and (max-device-width:360px) {
+      .list ul li div:nth-child(2) {
+        width: 37%;
+    }
+    
+    .markDev {
+        font-size: 20px;}
+}
